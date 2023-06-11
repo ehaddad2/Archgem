@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		647286E42A356BC60047C10D /* ArchgemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647286E32A356BC60047C10D /* ArchgemApp.swift */; };
+		647286E62A356BC60047C10D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647286E52A356BC60047C10D /* ContentView.swift */; };
+		647286E82A356BC70047C10D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647286E72A356BC70047C10D /* Assets.xcassets */; };
+		647286EB2A356BC70047C10D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647286EA2A356BC70047C10D /* Preview Assets.xcassets */; };
+		647286F52A356BC70047C10D /* ArchgemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647286F42A356BC70047C10D /* ArchgemTests.swift */; };
+		647286FF2A356BC70047C10D /* ArchgemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647286FE2A356BC70047C10D /* ArchgemUITests.swift */; };
+		647287012A356BC70047C10D /* ArchgemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647287002A356BC70047C10D /* ArchgemUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		647286F12A356BC70047C10D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 647286D82A356BC60047C10D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 647286DF2A356BC60047C10D;
+			remoteInfo = Archgem;
+		};
+		647286FB2A356BC70047C10D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 647286D82A356BC60047C10D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 647286DF2A356BC60047C10D;
+			remoteInfo = Archgem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		647286E02A356BC60047C10D /* Archgem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Archgem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		647286E32A356BC60047C10D /* ArchgemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchgemApp.swift; sourceTree = "<group>"; };
+		647286E52A356BC60047C10D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		647286E72A356BC70047C10D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		647286EA2A356BC70047C10D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		647286F02A356BC70047C10D /* ArchgemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchgemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		647286F42A356BC70047C10D /* ArchgemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchgemTests.swift; sourceTree = "<group>"; };
+		647286FA2A356BC70047C10D /* ArchgemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchgemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		647286FE2A356BC70047C10D /* ArchgemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchgemUITests.swift; sourceTree = "<group>"; };
+		647287002A356BC70047C10D /* ArchgemUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchgemUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		647286DD2A356BC60047C10D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		647286ED2A356BC70047C10D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		647286F72A356BC70047C10D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		647286D72A356BC60047C10D = {
+			isa = PBXGroup;
+			children = (
+				647286E22A356BC60047C10D /* Archgem */,
+				647286F32A356BC70047C10D /* ArchgemTests */,
+				647286FD2A356BC70047C10D /* ArchgemUITests */,
+				647286E12A356BC60047C10D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		647286E12A356BC60047C10D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				647286E02A356BC60047C10D /* Archgem.app */,
+				647286F02A356BC70047C10D /* ArchgemTests.xctest */,
+				647286FA2A356BC70047C10D /* ArchgemUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		647286E22A356BC60047C10D /* Archgem */ = {
+			isa = PBXGroup;
+			children = (
+				647286E32A356BC60047C10D /* ArchgemApp.swift */,
+				647286E52A356BC60047C10D /* ContentView.swift */,
+				647286E72A356BC70047C10D /* Assets.xcassets */,
+				647286E92A356BC70047C10D /* Preview Content */,
+			);
+			path = Archgem;
+			sourceTree = "<group>";
+		};
+		647286E92A356BC70047C10D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				647286EA2A356BC70047C10D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		647286F32A356BC70047C10D /* ArchgemTests */ = {
+			isa = PBXGroup;
+			children = (
+				647286F42A356BC70047C10D /* ArchgemTests.swift */,
+			);
+			path = ArchgemTests;
+			sourceTree = "<group>";
+		};
+		647286FD2A356BC70047C10D /* ArchgemUITests */ = {
+			isa = PBXGroup;
+			children = (
+				647286FE2A356BC70047C10D /* ArchgemUITests.swift */,
+				647287002A356BC70047C10D /* ArchgemUITestsLaunchTests.swift */,
+			);
+			path = ArchgemUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		647286DF2A356BC60047C10D /* Archgem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 647287042A356BC70047C10D /* Build configuration list for PBXNativeTarget "Archgem" */;
+			buildPhases = (
+				647286DC2A356BC60047C10D /* Sources */,
+				647286DD2A356BC60047C10D /* Frameworks */,
+				647286DE2A356BC60047C10D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Archgem;
+			productName = Archgem;
+			productReference = 647286E02A356BC60047C10D /* Archgem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		647286EF2A356BC70047C10D /* ArchgemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 647287072A356BC70047C10D /* Build configuration list for PBXNativeTarget "ArchgemTests" */;
+			buildPhases = (
+				647286EC2A356BC70047C10D /* Sources */,
+				647286ED2A356BC70047C10D /* Frameworks */,
+				647286EE2A356BC70047C10D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				647286F22A356BC70047C10D /* PBXTargetDependency */,
+			);
+			name = ArchgemTests;
+			productName = ArchgemTests;
+			productReference = 647286F02A356BC70047C10D /* ArchgemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		647286F92A356BC70047C10D /* ArchgemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6472870A2A356BC70047C10D /* Build configuration list for PBXNativeTarget "ArchgemUITests" */;
+			buildPhases = (
+				647286F62A356BC70047C10D /* Sources */,
+				647286F72A356BC70047C10D /* Frameworks */,
+				647286F82A356BC70047C10D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				647286FC2A356BC70047C10D /* PBXTargetDependency */,
+			);
+			name = ArchgemUITests;
+			productName = ArchgemUITests;
+			productReference = 647286FA2A356BC70047C10D /* ArchgemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		647286D82A356BC60047C10D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					647286DF2A356BC60047C10D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					647286EF2A356BC70047C10D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 647286DF2A356BC60047C10D;
+					};
+					647286F92A356BC70047C10D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 647286DF2A356BC60047C10D;
+					};
+				};
+			};
+			buildConfigurationList = 647286DB2A356BC60047C10D /* Build configuration list for PBXProject "Archgem" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 647286D72A356BC60047C10D;
+			productRefGroup = 647286E12A356BC60047C10D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				647286DF2A356BC60047C10D /* Archgem */,
+				647286EF2A356BC70047C10D /* ArchgemTests */,
+				647286F92A356BC70047C10D /* ArchgemUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		647286DE2A356BC60047C10D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				647286EB2A356BC70047C10D /* Preview Assets.xcassets in Resources */,
+				647286E82A356BC70047C10D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		647286EE2A356BC70047C10D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		647286F82A356BC70047C10D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		647286DC2A356BC60047C10D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				647286E62A356BC60047C10D /* ContentView.swift in Sources */,
+				647286E42A356BC60047C10D /* ArchgemApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		647286EC2A356BC70047C10D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				647286F52A356BC70047C10D /* ArchgemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		647286F62A356BC70047C10D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				647287012A356BC70047C10D /* ArchgemUITestsLaunchTests.swift in Sources */,
+				647286FF2A356BC70047C10D /* ArchgemUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		647286F22A356BC70047C10D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 647286DF2A356BC60047C10D /* Archgem */;
+			targetProxy = 647286F12A356BC70047C10D /* PBXContainerItemProxy */;
+		};
+		647286FC2A356BC70047C10D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 647286DF2A356BC60047C10D /* Archgem */;
+			targetProxy = 647286FB2A356BC70047C10D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		647287022A356BC70047C10D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		647287032A356BC70047C10D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		647287052A356BC70047C10D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Archgem/Preview Content\"";
+				DEVELOPMENT_TEAM = LU7HUW9NL6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MH.Archgem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		647287062A356BC70047C10D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Archgem/Preview Content\"";
+				DEVELOPMENT_TEAM = LU7HUW9NL6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MH.Archgem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		647287082A356BC70047C10D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LU7HUW9NL6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MH.ArchgemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Archgem.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Archgem";
+			};
+			name = Debug;
+		};
+		647287092A356BC70047C10D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LU7HUW9NL6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MH.ArchgemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Archgem.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Archgem";
+			};
+			name = Release;
+		};
+		6472870B2A356BC70047C10D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LU7HUW9NL6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MH.ArchgemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Archgem;
+			};
+			name = Debug;
+		};
+		6472870C2A356BC70047C10D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LU7HUW9NL6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MH.ArchgemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Archgem;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		647286DB2A356BC60047C10D /* Build configuration list for PBXProject "Archgem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				647287022A356BC70047C10D /* Debug */,
+				647287032A356BC70047C10D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		647287042A356BC70047C10D /* Build configuration list for PBXNativeTarget "Archgem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				647287052A356BC70047C10D /* Debug */,
+				647287062A356BC70047C10D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		647287072A356BC70047C10D /* Build configuration list for PBXNativeTarget "ArchgemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				647287082A356BC70047C10D /* Debug */,
+				647287092A356BC70047C10D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6472870A2A356BC70047C10D /* Build configuration list for PBXNativeTarget "ArchgemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6472870B2A356BC70047C10D /* Debug */,
+				6472870C2A356BC70047C10D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 647286D82A356BC60047C10D /* Project object */;
+}
