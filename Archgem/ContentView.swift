@@ -9,13 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-/*        if (LoginService.getAuthenticationStatus()) {
+        if (LoginService.getAuthenticationStatus()) {
             HomeUIView()
         }
         else {
             LoginScreen()
-        }*/
-        LoginScreen()
+        }
+        
     }
 }
 

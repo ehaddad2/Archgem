@@ -16,6 +16,10 @@ class API {
         self.baseURLComp.scheme = "Protocol".localized
     }
     
+    /*
+     ONLY used for session initialization which is mandatory for app to run.
+     Should not be used for any other api calls, use async method.
+     */
     func makeSyncRequest(_ method: String, endpoint: String = "", queryParams: [String: String] = [:], with parameters: Encodable? = nil) throws -> Data{
         guard let url = baseURLComp.url else {
             throw NSError()

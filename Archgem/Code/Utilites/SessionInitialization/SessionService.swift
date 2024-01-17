@@ -9,10 +9,10 @@ class SessionService {
     /*
      Fetches initialization tokens from the backend
      */
-    func initializeService() async{
+    func initializeService(){
         let api = API(to:"")
         do {
-            let data = try await api.makeAsyncRequest("GET")
+            let data = try api.makeSyncRequest("GET")
             let response = try JSONDecoder().decode(SessionResponseData.self, from: data)
             print(response.SID)
             csrfToken = response.CSRF

@@ -2,7 +2,7 @@ import SwiftUI
 
 struct LoginScreen: View {
     
-    @ObservedObject var viewModel: LoginViewModel = LoginViewModel()
+    @StateObject var viewModel: LoginViewModel = LoginViewModel()
     @State private var loggedIn: Bool = false
     @State private var isLoggingIn: Bool = false // State to track the login process
     @State private var navigationPath = NavigationPath()

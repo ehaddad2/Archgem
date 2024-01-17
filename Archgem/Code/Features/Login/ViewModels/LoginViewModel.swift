@@ -17,7 +17,6 @@ class LoginViewModel: ObservableObject {
                 self.isLoggedIn = true
                 print("Logged In")
             }
-            
         }
         else {
             DispatchQueue.main.async {

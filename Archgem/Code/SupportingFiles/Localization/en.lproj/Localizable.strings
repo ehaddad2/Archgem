@@ -4,7 +4,7 @@
 "Port" = 8000;
 
 //LOGIN UI
-"Login.UsernameField.Title" = "Username";
+"Login.UsernameField.Title" = "User";
 "Login.PasswordField.Title" = "Password";
 "Login.LoginButton.Title" = "Login";
 

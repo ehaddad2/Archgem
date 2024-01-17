@@ -4,11 +4,15 @@ class LoginService {
     var parameters: LoginRequest
     init(_ parameters: LoginRequest) {
         self.parameters = parameters
+        /*Task(priority:.high) {
+            await SessionService.shared.initializeService()
+        }*/
     }
     /*
-     GOAL: need to login user. if successful, store auth token in keychain and return true, else return false.
+     login user. if successful, store auth token in keychain and return true, else return false.
      */
     func authenticate()async->Bool {
+        
         let api = API(to: "/Login/")
         do {
             let data = try await api.makeAsyncRequest("POST", with: parameters)
@@ -29,9 +33,19 @@ class LoginService {
     
     //login if already authenticated
     static func getAuthenticationStatus() -> Bool {
+        let api = API(to: "/Login/")
         do {
-            if try (KeychainService.getEntry(id: "AuthToken".localized) != nil) {
-                return true
+            var authToken = try KeychainService.getEntry(id: "AuthToken".localized)
+            if (authToken != nil) {
+                if let authToken = authToken as? [String: Any],
+                   let authToken = authToken[kSecValueData as String] as? Data,
+                   let token = String(data: authToken, encoding: .utf8) {
+                    return true
+                    Task{
+                        //let data = try await api.makeAsyncRequest("POST", with: LoginValidation(token:token))
+                        return true
+                    }
+                }
             }
         }
         catch {
