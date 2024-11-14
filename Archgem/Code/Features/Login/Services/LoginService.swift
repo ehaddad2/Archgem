@@ -40,11 +40,11 @@ class LoginService {
                 if let authToken = authToken as? [String: Any],
                    let authToken = authToken[kSecValueData as String] as? Data,
                    let token = String(data: authToken, encoding: .utf8) {
-                    return true
                     Task{
-                        //let data = try await api.makeAsyncRequest("POST", with: LoginValidation(token:token))
+                        let data = try await api.makeAsyncRequest("POST", with: LoginValidation(token:token))
                         return true
                     }
+                    return true
                 }
             }
         }

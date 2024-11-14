@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6425E06C2C350D940093CB89 /* SearchSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6425E06B2C350D940093CB89 /* SearchSheet.swift */; };
 		647286E42A356BC60047C10D /* ArchgemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647286E32A356BC60047C10D /* ArchgemApp.swift */; };
 		647286E62A356BC60047C10D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647286E52A356BC60047C10D /* ContentView.swift */; };
 		647286E82A356BC70047C10D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647286E72A356BC70047C10D /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		6472876D2A46982D0047C10D /* calibri-bold-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 647287692A46982D0047C10D /* calibri-bold-italic.ttf */; };
 		6472876E2A46982D0047C10D /* calibri-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6472876A2A46982D0047C10D /* calibri-italic.ttf */; };
 		6472876F2A46982D0047C10D /* calibri-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6472876B2A46982D0047C10D /* calibri-regular.ttf */; };
+		647304212BCC72A90019C07E /* LocationSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647304202BCC72A90019C07E /* LocationSearch.swift */; };
 		647F09F92AE4C91600AF7685 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647F09F82AE4C91600AF7685 /* Keychain.swift */; };
 		6480D2462AE6FD4400783449 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6480D2452AE6FD4400783449 /* HomeScreen.swift */; };
 		6480D24E2B097CAE00783449 /* Gem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6480D24D2B097CAE00783449 /* Gem.swift */; };
@@ -27,6 +29,7 @@
 		6480D2542B0981D600783449 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6480D2532B0981D600783449 /* HomeService.swift */; };
 		6480D2562B0981E600783449 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6480D2552B0981E600783449 /* HomeViewModel.swift */; };
 		6480D2582B09835000783449 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6480D2572B09835000783449 /* LocationManager.swift */; };
+		6483837E2F071924005A5B99 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6483837D2F071918005A5B99 /* README.md */; };
 		648AAD062AA103BC00862CBC /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648AAD052AA103BC00862CBC /* LoginService.swift */; };
 		648AAD082AA103E000862CBC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648AAD072AA103E000862CBC /* LoginViewModel.swift */; };
 		648AAD0A2AA103F200862CBC /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648AAD092AA103F200862CBC /* LoginRequest.swift */; };
@@ -57,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6425E06B2C350D940093CB89 /* SearchSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSheet.swift; sourceTree = "<group>"; };
 		647286E02A356BC60047C10D /* Archgem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Archgem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		647286E32A356BC60047C10D /* ArchgemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchgemApp.swift; sourceTree = "<group>"; };
 		647286E52A356BC60047C10D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +77,7 @@
 		647287692A46982D0047C10D /* calibri-bold-italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "calibri-bold-italic.ttf"; sourceTree = "<group>"; };
 		6472876A2A46982D0047C10D /* calibri-italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "calibri-italic.ttf"; sourceTree = "<group>"; };
 		6472876B2A46982D0047C10D /* calibri-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "calibri-regular.ttf"; sourceTree = "<group>"; };
+		647304202BCC72A90019C07E /* LocationSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearch.swift; sourceTree = "<group>"; };
 		647F09F82AE4C91600AF7685 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		6480D2452AE6FD4400783449 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		6480D24D2B097CAE00783449 /* Gem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gem.swift; sourceTree = "<group>"; };
@@ -80,6 +85,7 @@
 		6480D2532B0981D600783449 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 		6480D2552B0981E600783449 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		6480D2572B09835000783449 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		6483837D2F071918005A5B99 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		648AAD052AA103BC00862CBC /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		648AAD072AA103E000862CBC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		648AAD092AA103F200862CBC /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 				647286F32A356BC70047C10D /* ArchgemTests */,
 				647286FD2A356BC70047C10D /* ArchgemUITests */,
 				647286E12A356BC60047C10D /* Products */,
+				6483837D2F071918005A5B99 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -222,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				6480D2572B09835000783449 /* LocationManager.swift */,
+				647304202BCC72A90019C07E /* LocationSearch.swift */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -251,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				6480D2452AE6FD4400783449 /* HomeScreen.swift */,
+				6425E06B2C350D940093CB89 /* SearchSheet.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -493,6 +502,7 @@
 			files = (
 				647286EB2A356BC70047C10D /* Preview Assets.xcassets in Resources */,
 				647287662A4697EC0047C10D /* agency-fb.ttf in Resources */,
+				6483837E2F071924005A5B99 /* README.md in Resources */,
 				6472876D2A46982D0047C10D /* calibri-bold-italic.ttf in Resources */,
 				6472876E2A46982D0047C10D /* calibri-italic.ttf in Resources */,
 				648AAD122AA17FE200862CBC /* Localizable.strings in Resources */,
@@ -532,8 +542,10 @@
 				648AAD0C2AA103FE00862CBC /* LoginResponse.swift in Sources */,
 				648AAD062AA103BC00862CBC /* LoginService.swift in Sources */,
 				6480D2542B0981D600783449 /* HomeService.swift in Sources */,
+				647304212BCC72A90019C07E /* LocationSearch.swift in Sources */,
 				648AAD262AA68E9100862CBC /* APIService.swift in Sources */,
 				648AAD0E2AA1041B00862CBC /* LoginScreen.swift in Sources */,
+				6425E06C2C350D940093CB89 /* SearchSheet.swift in Sources */,
 				6480D2462AE6FD4400783449 /* HomeScreen.swift in Sources */,
 				6480D2582B09835000783449 /* LocationManager.swift in Sources */,
 				648AAD212AA674FD00862CBC /* SessionService.swift in Sources */,
@@ -639,7 +651,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -693,7 +705,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -772,7 +784,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LU7HUW9NL6;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.MH.ArchgemTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -792,7 +804,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LU7HUW9NL6;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.MH.ArchgemTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
