@@ -20,7 +20,7 @@ class SessionService {
             initialized = true
             
         } catch {
-            print(error.localizedDescription)
+            print("FAILED TO INIT SESSION: \(error.localizedDescription)")
         }
     }
     
