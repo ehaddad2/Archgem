@@ -1,5 +1,7 @@
 # Archgem (iOS)
 
+![UML Diagram](Archgem/uml.png)
+
 iOS client for Archgem. Built with SwiftUI + MVVM. Primary features:
 - Login (Django session + token persisted in Keychain)
 - Map-based discovery of landmarks (“Gems”)
