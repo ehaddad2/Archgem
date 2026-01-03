@@ -50,10 +50,31 @@ struct HomeUIView: View {
     @ObservedObject var viewModel = HomeViewModel()
     @State private var searchRes: [SearchResult]?
     @State private var camPosition: MapCameraPosition = .userLocation(fallback: .automatic)
+    @State private var submittedGemQuery: String = ""
     @State var displayedGems: [Gem]?
     @EnvironmentObject var locationManager: LocationManager
     @Namespace var mainMapScope
     @State private var activeSheet: ActiveSheet? = .search // Present the search sheet by default
+    @State private var currentRegion = MKCoordinateRegion(
+        center: CLLocationCoordinate2D(latitude: 37.3349, longitude: -122.0090),
+        span: MKCoordinateSpan(latitudeDelta: 0.3, longitudeDelta: 0.4)
+    )
+
+    private func performSearch(region: MKCoordinateRegion) {
+        Task {
+            let q = submittedGemQuery.trimmingCharacters(in: .whitespacesAndNewlines)
+
+            if q.isEmpty {
+                if let gems = await viewModel.Search(position: region) {
+                    displayedGems = gems
+                }
+            } else {
+                if let gems = await viewModel.Search(position: region, queryText: q) {
+                    displayedGems = gems
+                }
+            }
+        }
+    }
 
     private var userLoc: CLLocationCoordinate2D? {
         return locationManager.lastLocation?.coordinate
@@ -101,6 +122,7 @@ struct HomeUIView: View {
                     }
                 }
             }
+            .ignoresSafeArea()
             .overlay(alignment: .topTrailing) {
                 // Map tools
                 VStack {
@@ -114,13 +136,25 @@ struct HomeUIView: View {
             }
             .mapScope(mainMapScope)
             .mapStyle(.standard(elevation: .realistic))
-            .onMapCameraChange { position in
-                // Populate view area with nearby gems
-                Task {
-                    if let gems = await viewModel.Search(position: position.region) {
-                        displayedGems = gems
-                    }
+            
+            .onAppear {
+                if let loc = userLoc {
+                    let region = MKCoordinateRegion(
+                        center: loc,
+                        span: MKCoordinateSpan(latitudeDelta: 0.3, longitudeDelta: 0.4)
+                    )
+                    currentRegion = region
+                    camPosition = .region(region)
                 }
+
+                performSearch(region: currentRegion)
+            }
+            .onMapCameraChange { position in
+                currentRegion = position.region
+                performSearch(region: position.region)
+            }
+            .onChange(of: submittedGemQuery) { _, _ in
+                performSearch(region: currentRegion)
             }
 
             HStack(alignment: .top) {
@@ -173,14 +207,18 @@ struct HomeUIView: View {
                     set: { _ in self.activeSheet = .search }
                 ), gem: gem)
             case .search:
-//                ProfilePopupView(isPresented: Binding(
-//                    get: { self.activeSheet == .profile },
-//                    set: { _ in self.activeSheet = nil }
-//                ))
-                SearchSheet(searchResults: $searchRes, onLocationSelected: { coordinate in
-                    //animateMapTo(coordinate, camPos: camPosition)
-                    animateCameraToLocation(coordinate: coordinate.loc, camPosition: $camPosition)
-                })
+                
+                SearchSheet(
+                    searchResults: $searchRes,
+                    onLocationSelected: { coordinate in
+                        animateCameraToLocation(coordinate: coordinate.loc, camPosition: $camPosition)
+                    },
+                    onGemQueryChanged: { q in
+                        submittedGemQuery = q
+                    }
+                )
+
+                
                 }
                     
             }
