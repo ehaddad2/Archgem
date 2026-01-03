@@ -5,19 +5,18 @@ import MapKit
 struct SearchSheet: View {
     @State private var locationSearch = LocationSearch(completer: .init())
     @State private var search: String = ""
+    @State private var submittedQuery: String = ""
     @Binding var searchResults: [SearchResult]?
+    
     var onLocationSelected: (SearchResult) -> Void
+    var onGemQueryChanged: (String) -> Void
     
     var body: some View {
         VStack {
             HStack {
                 Image(systemName:"magnifyingglass")
                 TextField("Search for Location or Gem", text: $search)
-                    .onSubmit {
-                        Task {
-                            searchResults = (try await locationSearch.search(with: search))
-                        }
-                    }
+
             }.modifier(TextFieldBG())
             
             List {
@@ -41,8 +40,9 @@ struct SearchSheet: View {
             .scrollContentBackground(.hidden)
         }
         
-        .onChange(of: search) {
-            locationSearch.update(queryFragment: search)
+        .onChange(of: search) { _, newValue in
+            locationSearch.update(queryFragment: newValue)
+            onGemQueryChanged(newValue)
         }
         .padding(12)
         .presentationDetents([.height(100), .medium])
