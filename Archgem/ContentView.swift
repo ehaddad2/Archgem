@@ -1,26 +1,22 @@
-//
-//  ContentView.swift
-//  Archgem
-//
-//  Created by Elias Haddad on 6/10/23.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        if (LoginService.getAuthenticationStatus()) {
-            HomeUIView()
-        }
-        else {
-            LoginScreen()
-        }
-        
-    }
-}
+    @State private var isAuthed: Bool? = nil
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    var body: some View {
+        Group {
+            if let isAuthed = isAuthed {
+                if isAuthed {
+                    HomeUIView()
+                } else {
+                    LoginScreen()
+                }
+            } else {
+                ProgressView()
+            }
+        }
+        .task {
+            isAuthed = await LoginService.getAuthenticationStatus()
+        }
     }
 }

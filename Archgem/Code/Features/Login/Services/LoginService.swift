@@ -4,14 +4,9 @@ class LoginService {
     var parameters: LoginRequest
     init(_ parameters: LoginRequest) {
         self.parameters = parameters
-        /*Task(priority:.high) {
-            await SessionService.shared.initializeService()
-        }*/
     }
-    /*
-     login user. if successful, store auth token in keychain and return true, else return false.
-     */
-    func authenticate()async->Bool {
+
+    func authenticate() async->Bool {
         
         let api = API(to: "/Login/")
         do {
@@ -32,26 +27,22 @@ class LoginService {
     }
     
     //login if already authenticated
-    static func getAuthenticationStatus() -> Bool {
+    static func getAuthenticationStatus() async -> Bool {
         let api = API(to: "/Login/")
+
         do {
-            var authToken = try KeychainService.getEntry(id: "AuthToken".localized)
-            if (authToken != nil) {
-                if let authToken = authToken as? [String: Any],
-                   let authToken = authToken[kSecValueData as String] as? Data,
-                   let token = String(data: authToken, encoding: .utf8) {
-                    Task{
-                        let data = try await api.makeAsyncRequest("POST", with: LoginValidation(token:token))
-                        return true
-                    }
-                    return true
-                }
-            }
+            let entry = try KeychainService.getEntry(id: "AuthToken".localized)
+            guard
+                let dict = entry as? [String: Any],
+                let data = dict[kSecValueData as String] as? Data,
+                let token = String(data: data, encoding: .utf8),
+                !token.isEmpty
+            else { return false }
+
+            _ = try await api.makeAsyncRequest("POST", with: LoginValidation(token: token))
+            return true
+        } catch {
+            return false
         }
-        catch {
-            print("Error querying for authentication token, forwarding to login page.")
-        }
-        return false
     }
-    
 }

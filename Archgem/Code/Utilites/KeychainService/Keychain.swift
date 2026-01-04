@@ -19,7 +19,7 @@ class KeychainService {
           kSecClass: kSecClassInternetPassword,
         ] as CFDictionary
         let status = SecItemAdd(keychainItem, nil)
-        
+
         if (status != 0) {
             print("WARNING: cannot add entry to keychain, possibly existing one present")
         }
@@ -27,19 +27,22 @@ class KeychainService {
     }
     
     class func getEntry(id: String) throws -> CFTypeRef? {
-        let query: [String:Any] = [
-          kSecClass as String: kSecClassInternetPassword,
-          kSecAttrServer as String: "Host".localized,
-          kSecReturnAttributes as String: true,
-          kSecReturnData as String: true
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassInternetPassword,
+            kSecAttrServer as String: "Host".localized,
+            kSecAttrAccount as String: id,
+            kSecReturnAttributes as String: true,
+            kSecReturnData as String: true
         ]
 
         var item: CFTypeRef?
         let status = SecItemCopyMatching(query as CFDictionary, &item)
-        guard status != errSecItemNotFound else { throw KeychainError.noData}
+
+        guard status != errSecItemNotFound else { throw KeychainError.noData }
         guard status == errSecSuccess else { throw KeychainError.unhandledError(status: status) }
         return item
     }
+
     
     class func updateEntry(id: String, data: String) -> OSStatus {
         let query = [
